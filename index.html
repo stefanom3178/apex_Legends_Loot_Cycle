@@ -6,40 +6,20 @@
 <link href ="style.css" rel="stylesheet">
 </head>
 <body onload="startTime()">
+
+
+  
   <div class="header">
     <h1>Apex Loot Tracker</h1>
   </div>
+
   <center>
   <div id="txt" style = "position:relative;left:80px;top:500px;"></div>
+
   </center>
-  <script>
-  function startTime() {
-    const today = new Date();
-    let h = today.getHours();
-    if (h>12) { 
-      h=h-12;
-    }
-    let m = today.getMinutes();
-    let s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-    setTimeout(startTime, 1000);
-  }
-  
-  function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-  }
 
-  const dayOfWeekDigit = new Date().getDay();
-console.log(dayOfWeekDigit); // 👉️ 0
+  <script src="javascript.js"></script>
 
-const dayOfWeekName = new Date().toLocaleString(
-  'default', {weekday: 'long'}
-);
-console.log(dayOfWeekName); // 👉️ Sunday
-
-  </script>
   </body>
+
   </html>
