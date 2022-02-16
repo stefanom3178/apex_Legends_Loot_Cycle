@@ -8,6 +8,6 @@ body {
     color: white;
     font-size: 30px;
   }
-.clock{
-    position:right;
+  .clock {
+    font-size: 50px;
   }

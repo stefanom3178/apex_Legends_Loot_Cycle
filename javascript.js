@@ -12,7 +12,7 @@ function startTime() {
     let s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+    document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
     setTimeout(startTime, 1000);
     pictureTime();
   }
@@ -32,19 +32,19 @@ console.log(dayOfWeekName); // 👉️ Sundayconsole.log(dayOfWeekName);
 
 function pictureTime(){
   console.log(dayOfWeekName);
-  if(dayOfWeekName==0){
-
+  if(dayOfWeekName=="Monday"){
+    document.getElementById("muffin").src="muffin.png";
   }else if(dayOfWeekName=="Tuesday"){
     document.getElementById("muffin").src="adventuretime.png";
-  }else if(dayOfWeekName==2){
-    document.getElementById("muffin").src="adventuretime.png";
-  }else if(dayOfWeekName==3){
-
-  }else if(dayOfWeekName==4){
-
-  }else if(dayOfWeekName==5){
-
-  }else if(dayOfWeekName==6){
-
+  }else if(dayOfWeekName=="Wednesday"){
+    document.getElementById("muffin").src="banana.png";
+  }else if(dayOfWeekName=="Thursday"){
+    document.getElementById("muffin").src="bloodhound.png";
+  }else if(dayOfWeekName=="Friday"){
+    document.getElementById("muffin").src="mirage.png";
+  }else if(dayOfWeekName=="Saturday"){
+    document.getElementById("muffin").src="regular-show.png";
+  }else if(dayOfWeekName=="Sunday"){
+    document.getElementById("muffin").src="wraith.png";
   }
 }

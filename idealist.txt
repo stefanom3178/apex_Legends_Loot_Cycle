@@ -1,0 +1,2 @@
+Paralax scrolling
+fix clock when its 0:00 with if else/if then statement.
