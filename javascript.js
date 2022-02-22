@@ -68,13 +68,23 @@ function pictureTimeTwo(){
     document.getElementById("muffin").src="adventuretime.png";
   }else if(cycle==2){
     document.getElementById("muffin").src="banana.png";
-  }else if(dayOfWeekName=="Thursday"){
+  }else if(cycle==3){
     document.getElementById("muffin").src="bloodhound.png";
-  }else if(dayOfWeekName=="Friday"){
+  }else if(cycle==4){
     document.getElementById("muffin").src="mirage.png";
-  }else if(dayOfWeekName=="Saturday"){
+  }else if(cycle==5){
     document.getElementById("muffin").src="regular-show.png";
-  }else if(dayOfWeekName=="Sunday"){
+  }else if(cycle==6){
+    document.getElementById("muffin").src="wraith.png";
+  }else if(cycle==7){
+    document.getElementById("muffin").src="wraith.png";
+  }else if(cycle==8){
+    document.getElementById("muffin").src="wraith.png";
+  }else if(cycle==9){
+    document.getElementById("muffin").src="wraith.png";
+  }else if(cycle==10){
+    document.getElementById("muffin").src="wraith.png";
+  }else if(cycle==11){
     document.getElementById("muffin").src="wraith.png";
   }
 }
