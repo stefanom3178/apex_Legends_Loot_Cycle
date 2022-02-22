@@ -14,7 +14,8 @@ function startTime() {
     s = checkTime(s);
     document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
     setTimeout(startTime, 1000);
-    pictureTime();
+    // pictureTime();
+    pictureTimeTwo();
   }
   
   function checkTime(i) {
@@ -37,6 +38,35 @@ function pictureTime(){
   }else if(dayOfWeekName=="Tuesday"){
     document.getElementById("muffin").src="adventuretime.png";
   }else if(dayOfWeekName=="Wednesday"){
+    document.getElementById("muffin").src="banana.png";
+  }else if(dayOfWeekName=="Thursday"){
+    document.getElementById("muffin").src="bloodhound.png";
+  }else if(dayOfWeekName=="Friday"){
+    document.getElementById("muffin").src="mirage.png";
+  }else if(dayOfWeekName=="Saturday"){
+    document.getElementById("muffin").src="regular-show.png";
+  }else if(dayOfWeekName=="Sunday"){
+    document.getElementById("muffin").src="wraith.png";
+  }
+}
+
+const year = new Date().getFullYear();
+const month = new Date().getMonth();
+const day = new Date().getDate();
+
+const startDate = new Date(2022, 0, 20);
+const currentDate = new Date(year, month, day);
+const diffTime = Math.abs(currentDate - startDate);
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+/*Need to go through and make sure there is an if for all 14 day cycles*/
+function pictureTimeTwo(){
+  const cycle = diffDays % 12;
+  if(cycle==0){
+    document.getElementById("muffin").src="muffin.png";
+  }else if(cycle==1){
+    document.getElementById("muffin").src="adventuretime.png";
+  }else if(cycle==2){
     document.getElementById("muffin").src="banana.png";
   }else if(dayOfWeekName=="Thursday"){
     document.getElementById("muffin").src="bloodhound.png";
