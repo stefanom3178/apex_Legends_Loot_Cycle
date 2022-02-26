@@ -1,4 +1,4 @@
-document.body.style.backgroundColor = "gray";
+document.body.style.backgroundColor = "black";
 
 
 
