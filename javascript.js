@@ -73,7 +73,7 @@ function pictureTimeTwo(){
   }else if(cycle==4){
     document.getElementById("muffin").src="mirage.png";
   }else if(cycle==5){
-    document.getElementById("muffin").src="regular-show.png";
+    document.getElementById("muffin").src="regular-show.jpg";
   }else if(cycle==6){
     document.getElementById("muffin").src="wraith.png";
   }else if(cycle==7){
