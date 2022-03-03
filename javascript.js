@@ -1,5 +1,5 @@
 document.body.style.backgroundColor = "black";
-
+document.body.style.background ="crafting.png"
 
 
 function startTime() {
